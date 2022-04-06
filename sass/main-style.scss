@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "glitten";
+    overflow-x: hidden;
+}
+
+#main-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(57, 57, 233);
+    text-align: center;
+    color: #fff;
+    position: relative;
+    .z-index{
+        z-index: 10;
+    }
+    h1{
+        padding:1em 0;
+    }
+    p{
+        color: rgba(15, 15, 15, 0.89);
+        font-family: "Agency FB";
+        font-size: 1.2em;
+        padding-bottom: 0.5em;
+    }
+    
+    #content{
+        box-shadow: 1px 1px  6px #000;
+        background-color: #ffffff3d;
+        width: 70%;
+        min-height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 0.3em;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        color: #000;
+        position: relative;
+        
+        
+        #activity{
+            padding-bottom: 2em;
+            font-size: 1.5em;
+        }
+        #type{
+            
+            font-family: "Agency FB";
+            font-size: 1.7em;
+        }
+        #link{
+            a{
+                font-family: "Lucida Calligraphy";
+            font-size: 1.1em;
+            cursor: pointer;
+            margin-top: 1em;
+            margin-bottom: 4em;
+            text-decoration: none;
+            transition: text-decoration,color ease-in-out 600ms;
+                color: #000;
+            &:hover{
+                color: #fff ;
+            }
+            }
+        }
+
+        #instruction{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 1em;
+        }
+    }
+
+    svg{
+        position: absolute;
+        width: 20%;
+    }
+
+    #left-svg{
+        left: 0;
+        top:20;
+        transform: translateX(40px);
+    }
+
+    #right-svg{
+        right: 0;
+        top:50;
+        transform: translateX(-40px);
+    }
+}

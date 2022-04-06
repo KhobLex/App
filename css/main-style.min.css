@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "glitten";
+  overflow-x: hidden;
+}
+
+#main-container {
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #3939e9;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+#main-container .z-index {
+  z-index: 10;
+}
+
+#main-container h1 {
+  padding: 1em 0;
+}
+
+#main-container p {
+  color: rgba(15, 15, 15, 0.89);
+  font-family: "Agency FB";
+  font-size: 1.2em;
+  padding-bottom: 0.5em;
+}
+
+#main-container #content {
+  -webkit-box-shadow: 1px 1px  6px #000;
+          box-shadow: 1px 1px  6px #000;
+  background-color: #ffffff3d;
+  width: 70%;
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border-radius: 0.3em;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #000;
+  position: relative;
+}
+
+#main-container #content #activity {
+  padding-bottom: 2em;
+  font-size: 1.5em;
+}
+
+#main-container #content #type {
+  font-family: "Agency FB";
+  font-size: 1.7em;
+}
+
+#main-container #content #link a {
+  font-family: "Lucida Calligraphy";
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 1em;
+  margin-bottom: 4em;
+  text-decoration: none;
+  -webkit-transition: color ease-in-out 600ms,-webkit-text-decoration;
+  transition: color ease-in-out 600ms,-webkit-text-decoration;
+  transition: text-decoration,color ease-in-out 600ms;
+  transition: text-decoration,color ease-in-out 600ms,-webkit-text-decoration;
+  color: #000;
+}
+
+#main-container #content #link a:hover {
+  color: #fff;
+}
+
+#main-container #content #instruction {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1em;
+}
+
+#main-container svg {
+  position: absolute;
+  width: 20%;
+}
+
+#main-container #left-svg {
+  left: 0;
+  top: 20;
+  -webkit-transform: translateX(40px);
+          transform: translateX(40px);
+}
+
+#main-container #right-svg {
+  right: 0;
+  top: 50;
+  -webkit-transform: translateX(-40px);
+          transform: translateX(-40px);
+}
+/*# sourceMappingURL=main-style.min.css.map */
