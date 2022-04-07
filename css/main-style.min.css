@@ -148,6 +148,7 @@
   }
   #main-container #content {
     min-height: 100vh;
+    width: 90%;
   }
   #main-container #content #link {
     margin-bottom: 4em;
