@@ -98,3 +98,10 @@
         transform: translateX(-40px);
     }
 }
+
+
+@media screen and (max-width:412px){
+    #main-container{
+        padding: 0 1em;
+    }
+}

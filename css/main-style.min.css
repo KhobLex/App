@@ -127,4 +127,10 @@
   -webkit-transform: translateX(-40px);
           transform: translateX(-40px);
 }
+
+@media screen and (max-width: 412px) {
+  #main-container {
+    padding: 0 1em;
+  }
+}
 /*# sourceMappingURL=main-style.min.css.map */
