@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -72,13 +74,15 @@
 }
 
 #main-container #content #activity {
+  font-family: 'Libre Baskerville', serif;
   padding-bottom: 2em;
   font-size: 1.5em;
 }
 
 #main-container #content #type {
+  color: #313131;
   font-family: "Agency FB";
-  font-size: 1.7em;
+  font-size: 1.8em;
 }
 
 #main-container #content #link {
@@ -88,14 +92,15 @@
 }
 
 #main-container #content #link a {
-  font-family: "Lucida Calligraphy";
-  font-size: 1.1em;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
   text-decoration: none;
   -webkit-transition: color ease-in-out 600ms,-webkit-text-decoration;
   transition: color ease-in-out 600ms,-webkit-text-decoration;
   transition: text-decoration,color ease-in-out 600ms;
   transition: text-decoration,color ease-in-out 600ms,-webkit-text-decoration;
   color: #000;
+  font-weight: bold;
 }
 
 #main-container #content #link a:hover {
@@ -131,6 +136,18 @@
 @media screen and (max-width: 412px) {
   #main-container {
     padding: 0 1em;
+  }
+  #main-container #content svg {
+    position: absolute;
+    width: 60% !important;
+  }
+  #main-container #content #left-svg {
+    -webkit-transform: translateX(29px);
+            transform: translateX(29px);
+  }
+  #main-container #content #right-svg {
+    -webkit-transform: translateX(-29px);
+            transform: translateX(-29px);
   }
 }
 /*# sourceMappingURL=main-style.min.css.map */

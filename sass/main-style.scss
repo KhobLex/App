@@ -1,3 +1,8 @@
+// Importing
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -48,25 +53,26 @@
         
         
         #activity{
+            font-family: 'Libre Baskerville', serif;
             padding-bottom: 2em;
             font-size: 1.5em;
         }
         #type{
-            
+            color: rgb(49, 49, 49);
             font-family: "Agency FB";
-            font-size: 1.7em;
+            font-size: 1.8em;
         }
         #link{
             margin-bottom: 4em;
             cursor: pointer;
             margin-top: 1em;
-            
             a{
-                font-family: "Lucida Calligraphy";
-            font-size: 1.1em;
+                font-family: 'Playfair Display', serif;
+                font-size: 1.5em;
             text-decoration: none;
             transition: text-decoration,color ease-in-out 600ms;
             color: #000;
+            font-weight: bold;
             &:hover{
                 color: #fff ;
             }
@@ -99,9 +105,29 @@
     }
 }
 
+// media query for smaller screen
+
 
 @media screen and (max-width:412px){
     #main-container{
         padding: 0 1em;
+
+        #content{
+            svg{
+                position: absolute;
+                width: 60% !important;
+            }
+
+            #left-svg{
+                
+                transform: translateX(29px);
+            }
+        
+            #right-svg{
+                
+                transform: translateX(-29px);
+            }
+        
+        }
     }
 }
