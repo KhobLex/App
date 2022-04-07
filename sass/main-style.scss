@@ -22,7 +22,6 @@
     text-align: center;
     color: #fff;
     position: relative;
-    padding-bottom: 2em;
     .z-index{
         z-index: 10;
     }
@@ -64,7 +63,6 @@
             font-size: 1.8em;
         }
         #link{
-            margin-bottom: 4em;
             cursor: pointer;
             margin-top: 1em;
             a{
@@ -111,9 +109,15 @@
 
 @media screen and (max-width:412px){
     #main-container{
-        padding: 0 1em;
+        padding: 0 1em 2em 1em;
+
 
         #content{
+            
+
+            #link{
+                margin-bottom: 4em;
+            }
             svg{
                 position: absolute;
                 width: 60% !important;
