@@ -26,7 +26,7 @@
     text-align: center;
     color: #fff;
     position: relative;
-    padding: 0 2em;
+    padding:  2em;
     
     .z-index{
         z-index: 10;
@@ -34,7 +34,7 @@
     h1{
         font-family: 'Pacifico', cursive;
         color: #0D143D;
-        padding:0 0 0.5em 0;
+        padding-bottom: 0.5em;
     }
     p{
         color: rgba(15, 15, 15, 0.89);
@@ -51,24 +51,25 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
         text-align: center;
         border-radius: 0.3em;
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
         color: #000;
-        position: relative;
+        // position: relative;
+        padding: 5em 1em 1em;
         
         
         #activity{
             font-family: 'Libre Baskerville', serif;
             padding-bottom: 2em;
-            font-size: 1.5em;
+            font-size: 1.5em !important;
         }
         #type{
             color: rgb(49, 49, 49);
             font-family: "Agency FB";
-            font-size: 1.8em;
+            font-size: 1.5em;
         }
         #link{
             cursor: pointer;
@@ -91,16 +92,27 @@
             bottom: 0;
             right: 0;
             margin: 1em;
+            font-family: "Agency FB";
+            font-size: 1em;
+            padding: 0.2em;
+            outline: none;
+            border: none;
+            background: #ffffff3b;
+            backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+            box-shadow: 1px 1px 7px #000;
+            border-radius: 0.2em;
+            cursor: pointer;
         }
     }
 
     svg{
         position: absolute;
         width: 25%;
+        opacity: 0;
     }
 
     #left-svg{
-        
         left: 0;
         top:20;
         transform: translateX(40px);
@@ -115,7 +127,7 @@
         top:50;
         transform: translateX(-40px);
     }
-
+    
     #about-link{
         font-family: 'Pacifico', cursive;
         width: 100%;
@@ -166,30 +178,30 @@
 
 @media screen and (max-width:412px){
     #main-container{
-        padding: 0 1em 2em 1em;
-
+        padding-bottom: 6em;
         #content{
-            min-height: 100vh;
-            width: 90%;
-            #link{
-                margin-bottom: 4em;
+            width: 100%;
+            #activity{
+                font-family: 'Libre Baskerville', serif;
+                padding-bottom: 2em;
+                font-size: 1em;
             }
             
-            #left-svg{
-                margin-left: -20px !important;
-                transform: translateX(59px);
-            }
-        
-            #right-svg{
-                margin-right: -50% !important;
-                transform: translateX(-29px);
-            }
-
+            
             #about-link{
                 width: 100%;
                 text-align: end;
             }
         
+        }
+        svg{
+            width: 30%;
+        }
+        #left-svg{
+            left: -10%;
+        }
+        #right-svg{
+            right: -10%;
         }
     }
 }

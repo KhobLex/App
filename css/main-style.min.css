@@ -32,7 +32,7 @@
   text-align: center;
   color: #fff;
   position: relative;
-  padding: 0 2em;
+  padding: 2em;
 }
 
 #main-container .z-index {
@@ -42,7 +42,7 @@
 #main-container h1 {
   font-family: 'Pacifico', cursive;
   color: #0D143D;
-  padding: 0 0 0.5em 0;
+  padding-bottom: 0.5em;
 }
 
 #main-container p {
@@ -68,27 +68,27 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   text-align: center;
   border-radius: 0.3em;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   color: #000;
-  position: relative;
+  padding: 5em 1em 1em;
 }
 
 #main-container #content #activity {
   font-family: 'Libre Baskerville', serif;
   padding-bottom: 2em;
-  font-size: 1.5em;
+  font-size: 1.5em !important;
 }
 
 #main-container #content #type {
   color: #313131;
   font-family: "Agency FB";
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 
 #main-container #content #link {
@@ -117,11 +117,24 @@
   bottom: 0;
   right: 0;
   margin: 1em;
+  font-family: "Agency FB";
+  font-size: 1em;
+  padding: 0.2em;
+  outline: none;
+  border: none;
+  background: #ffffff3b;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  -webkit-box-shadow: 1px 1px 7px #000;
+          box-shadow: 1px 1px 7px #000;
+  border-radius: 0.2em;
+  cursor: pointer;
 }
 
 #main-container svg {
   position: absolute;
   width: 25%;
+  opacity: 0;
 }
 
 #main-container #left-svg {
@@ -190,28 +203,28 @@
 
 @media screen and (max-width: 412px) {
   #main-container {
-    padding: 0 1em 2em 1em;
+    padding-bottom: 6em;
   }
   #main-container #content {
-    min-height: 100vh;
-    width: 90%;
+    width: 100%;
   }
-  #main-container #content #link {
-    margin-bottom: 4em;
-  }
-  #main-container #content #left-svg {
-    margin-left: -20px !important;
-    -webkit-transform: translateX(59px);
-            transform: translateX(59px);
-  }
-  #main-container #content #right-svg {
-    margin-right: -50% !important;
-    -webkit-transform: translateX(-29px);
-            transform: translateX(-29px);
+  #main-container #content #activity {
+    font-family: 'Libre Baskerville', serif;
+    padding-bottom: 2em;
+    font-size: 1em;
   }
   #main-container #content #about-link {
     width: 100%;
     text-align: end;
+  }
+  #main-container svg {
+    width: 30%;
+  }
+  #main-container #left-svg {
+    left: -10%;
+  }
+  #main-container #right-svg {
+    right: -10%;
   }
 }
 /*# sourceMappingURL=main-style.min.css.map */

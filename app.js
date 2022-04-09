@@ -14,6 +14,12 @@
 })
 .catch((err)=>{
     document.getElementById("activity").innerHTML=err.message + `, Check Your Network Connection  ! ! ! !`;
-})
+});
+
+
+function refresh(event){
+    // event.preventDefault();
+    window.location.reload()
+}
 
 
