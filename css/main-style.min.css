@@ -104,7 +104,7 @@
   transition: color ease-in-out 600ms,-webkit-text-decoration;
   transition: text-decoration,color ease-in-out 600ms;
   transition: text-decoration,color ease-in-out 600ms,-webkit-text-decoration;
-  color: #000;
+  color: #cf1212;
   font-weight: bold;
 }
 
